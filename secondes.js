@@ -1,6 +1,5 @@
-function secondes() {
-    var d = new Date();
-    var seconds = Math.round(d.getTime() / 1000);
+function secondes(an2000, dateNow) {
+   return (an2000 - dateNow) / 1000
 }
 
-module.exports = secondes ;
+module.exports = secondes;
